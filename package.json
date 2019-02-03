@@ -1,0 +1,93 @@
+{
+  "name": "@emrys-golden/me-webapp",
+  "version": "1.0.0",
+  "description": "Web App for Personal Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "client": "webpack-dev-server --mode development --devtool inline-source-map --hot",
+    "server": "nodemon src/server/index.js",
+    "start": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "jest": {
+    "projects": [
+      {
+        "displayName": "client",
+        "testMatch": [
+          "<rootDir>/src/client/**/*.spec.{js,jsx}"
+        ],
+        "testEnvironment": "jsdom",
+        "snapshotSerializers": [
+          "<rootDir>/node_modules/enzyme-to-json/serializer"
+        ],
+        "setupFiles": [
+          "<rootDir>/src/client/__tests__/setupFile.js"
+        ],
+        "collectCoverageFrom": [
+          "src/client/**/*.{js,jsx}",
+          "!**/node_modules/**",
+          "!test-results/**"
+        ]
+      },
+      {
+        "displayName": "server",
+        "testMatch": [
+          "<rootDir>/src/server/**/*.spec.js"
+        ],
+        "testEnvironment": "node",
+        "collectCoverageFrom": [
+          "src/server/**/*.js",
+          "!**/node_modules/**",
+          "!test-results/**"
+        ]
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emrys-golden/me-webapp.git"
+  },
+  "keywords": [
+    "React",
+    "express"
+  ],
+  "author": "Jonathan Golden",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/emrys-golden/me-webapp/issues"
+  },
+  "homepage": "https://github.com/emrys-golden/me-webapp#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "prop-types": "^15.6.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-router-dom": "^4.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.3.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.0.5",
+    "clean-webpack-plugin": "^1.0.1",
+    "concurrently": "^4.1.0",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.8.0",
+    "enzyme-to-json": "^3.3.5",
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.0",
+    "eslint-plugin-react": "^7.12.4",
+    "html-webpack-plugin": "^3.2.0",
+    "imports-loader": "^0.8.0",
+    "jest": "^24.0.0",
+    "nodemon": "^1.18.9",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
+  }
+}

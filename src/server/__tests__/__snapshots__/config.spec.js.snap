@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`router config tests should be defined correctly 1`] = `Array []`;

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component tests should render correctly 1`] = `
+<BrowserRouter>
+  <Suspense
+    fallback={
+      <div>
+        Loading...
+      </div>
+    }
+  >
+    <Switch>
+      <Route
+        component={[Function]}
+        key="/test"
+        path="/test"
+      />
+    </Switch>
+  </Suspense>
+</BrowserRouter>
+`;

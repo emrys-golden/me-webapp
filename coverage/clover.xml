@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1549254848981" clover="3.2.0">
+  <project timestamp="1549254848981" name="All files">
+    <metrics statements="30" coveredstatements="30" conditionals="6" coveredconditionals="6" methods="6" coveredmethods="6" elements="42" coveredelements="42" complexity="0" loc="30" ncloc="30" packages="5" files="8" classes="8"/>
+    <package name="client">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.js" path="/home/emrys/Development/me-webapp/src/client/index.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="6" count="1" type="stmt"/>
+      </file>
+      <file name="routes.js" path="/home/emrys/Development/me-webapp/src/client/routes.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="client.__tests__">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="setupFile.js" path="/home/emrys/Development/me-webapp/src/client/__tests__/setupFile.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="4" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="client.components">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="App.jsx" path="/home/emrys/Development/me-webapp/src/client/components/App.jsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="server">
+      <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="config.js" path="/home/emrys/Development/me-webapp/src/server/config.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="2" type="stmt"/>
+      </file>
+      <file name="index.js" path="/home/emrys/Development/me-webapp/src/server/index.js">
+        <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="14" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="16" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="server.utils">
+      <metrics statements="14" coveredstatements="14" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
+      <file name="attachRoutes.js" path="/home/emrys/Development/me-webapp/src/server/utils/attachRoutes.js">
+        <metrics statements="9" coveredstatements="9" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="cond" truecount="4" falsecount="0"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+      </file>
+      <file name="logger.js" path="/home/emrys/Development/me-webapp/src/server/utils/logger.js">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
